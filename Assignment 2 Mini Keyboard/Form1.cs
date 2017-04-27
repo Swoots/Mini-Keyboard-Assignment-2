@@ -38,6 +38,10 @@ namespace Assignment_2_Mini_Keyboard
         int intNumberOfCharacters;
         int pedictedWorddLength;
 
+        public Form1()
+        {
+            InitializeComponent();
+        }
 
         private void Frm_MainWindow_Load(object sender, EventArgs e)
         {
@@ -54,6 +58,8 @@ namespace Assignment_2_Mini_Keyboard
         }
 
 
+
+
         private void loadDictionary()
         {
 
@@ -61,10 +67,6 @@ namespace Assignment_2_Mini_Keyboard
 
 
 
-        public Form1()
-        {
-            InitializeComponent();
-        }
 
         private void btn_Mode_Click(object sender, EventArgs e)
         {
@@ -78,68 +80,148 @@ namespace Assignment_2_Mini_Keyboard
             }
         }
 
+
         private void btn_1_Click(object sender, EventArgs e)
         {
-            rtxt_WordBuilder.Text += "p";
-            Str_KeyStrokes += "1";
+            withinTimer.Interval = intIntervalRequired;
+            if (!withinTimer.Enabled)
+            {
+                rtxt_WordBuilder.Text += "p";
+                Str_KeyStrokes += "1";
+                withinTimer.Start();
+            }
+            else
+            {
+                string lastChar = "";
+
+                // Gets the last character
+                if (rtxt_WordBuilder.Text.Length > 0)
+                {
+                    lastChar = rtxt_WordBuilder.Text.Substring(rtxt_WordBuilder.Text.Length - 1, 1);
+                }
+
+
+                // Deletes the last character
+                rtxt_WordBuilder.Text = rtxt_WordBuilder.Text.Substring(0, rtxt_WordBuilder.Text.Length - 1);
+
+                // reset timer
+                withinTimer.Stop();
+                withinTimer.Start();
+                // depending on last char, pick new one
+                switch (lastChar)
+                {
+                    case "p":
+                        rtxt_WordBuilder.Text += "q";
+                        break;
+                    case "q":
+                        rtxt_WordBuilder.Text += "r";
+                        break;
+                    case "r":
+                        rtxt_WordBuilder.Text += "s";
+                        break;
+                    case "s":
+                        rtxt_WordBuilder.Text += "1";
+                        break;
+                    case "1":
+                        rtxt_WordBuilder.Text += "P";
+                        break;
+                    case "P":
+                        rtxt_WordBuilder.Text += "Q";
+                        break;
+                    case "Q":
+                        rtxt_WordBuilder.Text += "R";
+                        break;
+                    case "R":
+                        rtxt_WordBuilder.Text += "S";
+                        break;
+                    case "S":
+                        rtxt_WordBuilder.Text += "p";
+                        break;
+                }
+            }
         }
 
         private void btn_2_Click(object sender, EventArgs e)
         {
+            withinTimer.Interval = intIntervalRequired;
+            withinTimer.Start();
             rtxt_WordBuilder.Text += "t";
             Str_KeyStrokes += "2";
         }
 
         private void btn_3_Click(object sender, EventArgs e)
         {
+            withinTimer.Interval = intIntervalRequired;
+            withinTimer.Start();
             rtxt_WordBuilder.Text += "w";
             Str_KeyStrokes += "3";
         }
 
         private void btn_4_Click(object sender, EventArgs e)
         {
+            withinTimer.Interval = intIntervalRequired;
+            withinTimer.Start();
             rtxt_WordBuilder.Text += "g";
             Str_KeyStrokes += "4";
         }
 
         private void btn_5_Click(object sender, EventArgs e)
         {
+            withinTimer.Interval = intIntervalRequired;
+            withinTimer.Start();
             rtxt_WordBuilder.Text += "j";
             Str_KeyStrokes += "5";
         }
 
         private void btn_6_Click(object sender, EventArgs e)
         {
+            withinTimer.Interval = intIntervalRequired;
+            withinTimer.Start();
             rtxt_WordBuilder.Text += "m";
             Str_KeyStrokes += "6";
         }
 
         private void btn_7_Click(object sender, EventArgs e)
         {
+            withinTimer.Interval = intIntervalRequired;
+            withinTimer.Start();
             rtxt_WordBuilder.Text += ".";
             Str_KeyStrokes += "7";
         }
 
         private void btn_8_Click(object sender, EventArgs e)
         {
+            withinTimer.Interval = intIntervalRequired;
+            withinTimer.Start();
             rtxt_WordBuilder.Text += "a";
             Str_KeyStrokes += "8";
         }
 
         private void btn_9_Click(object sender, EventArgs e)
         {
+            withinTimer.Interval = intIntervalRequired;
+            withinTimer.Start();
             rtxt_WordBuilder.Text += "d";
             Str_KeyStrokes += "9";
         }
 
         private void btn_BottomLeft_Click(object sender, EventArgs e)
         {
+            withinTimer.Interval = intIntervalRequired;
+            withinTimer.Start();
             rtxt_WordBuilder.Text += "*";
         }
 
         private void btn_BottomRight_Click(object sender, EventArgs e)
         {
+            withinTimer.Interval = intIntervalRequired;
+            withinTimer.Start();
             rtxt_WordBuilder.Text += "#";
+        }
+
+        private void withinTimer_Tick(object sender, EventArgs e)
+        {
+            withinTimer.Stop();
         }
     }
 }

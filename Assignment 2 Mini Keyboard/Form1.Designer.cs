@@ -350,6 +350,7 @@
             // withinTimer
             // 
             this.withinTimer.Interval = 500;
+            this.withinTimer.Tick += new System.EventHandler(this.withinTimer_Tick);
             // 
             // Form1
             // 
