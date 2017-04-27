@@ -10,3 +10,9 @@ C:\Users\Luke\Documents\Visual Studio 2015\Projects\Assignment 2 Mini Keyboard\A
 F:\MyWork\GitHub\Mini-Keyboard-Assignment-2\Assignment 2 Mini Keyboard\bin\Debug\Assignment 2 Mini Keyboard.exe.config
 F:\MyWork\GitHub\Mini-Keyboard-Assignment-2\Assignment 2 Mini Keyboard\obj\Debug\Assignment 2 Mini Keyboard.exe
 F:\MyWork\GitHub\Mini-Keyboard-Assignment-2\Assignment 2 Mini Keyboard\obj\Debug\Assignment 2 Mini Keyboard.pdb
+F:\MyWork\GitHub\Mini-Keyboard-Assignment-2\Assignment 2 Mini Keyboard\bin\Debug\Assignment 2 Mini Keyboard.exe
+F:\MyWork\GitHub\Mini-Keyboard-Assignment-2\Assignment 2 Mini Keyboard\bin\Debug\Assignment 2 Mini Keyboard.pdb
+F:\MyWork\GitHub\Mini-Keyboard-Assignment-2\Assignment 2 Mini Keyboard\obj\Debug\Assignment 2 Mini Keyboard.csprojResolveAssemblyReference.cache
+F:\MyWork\GitHub\Mini-Keyboard-Assignment-2\Assignment 2 Mini Keyboard\obj\Debug\Assignment_2_Mini_Keyboard.Form1.resources
+F:\MyWork\GitHub\Mini-Keyboard-Assignment-2\Assignment 2 Mini Keyboard\obj\Debug\Assignment_2_Mini_Keyboard.Properties.Resources.resources
+F:\MyWork\GitHub\Mini-Keyboard-Assignment-2\Assignment 2 Mini Keyboard\obj\Debug\Assignment 2 Mini Keyboard.csproj.GenerateResource.Cache

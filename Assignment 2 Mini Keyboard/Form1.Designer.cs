@@ -190,6 +190,7 @@
             this.btn_7.TabIndex = 11;
             this.btn_7.Text = "7\r\n. , \"";
             this.btn_7.UseVisualStyleBackColor = false;
+            this.btn_7.Click += new System.EventHandler(this.btn_7_Click);
             // 
             // btn_4
             // 
@@ -200,6 +201,7 @@
             this.btn_4.TabIndex = 14;
             this.btn_4.Text = "4\r\nG H I";
             this.btn_4.UseVisualStyleBackColor = false;
+            this.btn_4.Click += new System.EventHandler(this.btn_4_Click);
             // 
             // btn_8
             // 
@@ -210,6 +212,7 @@
             this.btn_8.TabIndex = 10;
             this.btn_8.Text = "8\r\nA B C";
             this.btn_8.UseVisualStyleBackColor = false;
+            this.btn_8.Click += new System.EventHandler(this.btn_8_Click);
             // 
             // btn_5
             // 
@@ -220,6 +223,7 @@
             this.btn_5.TabIndex = 13;
             this.btn_5.Text = "5\r\nJ K L";
             this.btn_5.UseVisualStyleBackColor = false;
+            this.btn_5.Click += new System.EventHandler(this.btn_5_Click);
             // 
             // btn_9
             // 
@@ -230,6 +234,7 @@
             this.btn_9.TabIndex = 9;
             this.btn_9.Text = "9\r\nD E F";
             this.btn_9.UseVisualStyleBackColor = false;
+            this.btn_9.Click += new System.EventHandler(this.btn_9_Click);
             // 
             // txt_Notepad
             // 
@@ -249,6 +254,7 @@
             this.btn_6.TabIndex = 12;
             this.btn_6.Text = "6\r\nM N O";
             this.btn_6.UseVisualStyleBackColor = false;
+            this.btn_6.Click += new System.EventHandler(this.btn_6_Click);
             // 
             // btn_1
             // 
@@ -270,6 +276,7 @@
             this.btn_2.TabIndex = 10;
             this.btn_2.Text = "2\r\nT U V";
             this.btn_2.UseVisualStyleBackColor = false;
+            this.btn_2.Click += new System.EventHandler(this.btn_2_Click);
             // 
             // btn_3
             // 
@@ -280,6 +287,7 @@
             this.btn_3.TabIndex = 9;
             this.btn_3.Text = "3\r\nW X Y Z";
             this.btn_3.UseVisualStyleBackColor = false;
+            this.btn_3.Click += new System.EventHandler(this.btn_3_Click);
             // 
             // btn_BottomLeft
             // 
@@ -290,6 +298,7 @@
             this.btn_BottomLeft.TabIndex = 8;
             this.btn_BottomLeft.Text = "* - _";
             this.btn_BottomLeft.UseVisualStyleBackColor = false;
+            this.btn_BottomLeft.Click += new System.EventHandler(this.btn_BottomLeft_Click);
             // 
             // btn_BottomRight
             // 
@@ -300,6 +309,7 @@
             this.btn_BottomRight.TabIndex = 4;
             this.btn_BottomRight.Text = "#\r\n000";
             this.btn_BottomRight.UseVisualStyleBackColor = false;
+            this.btn_BottomRight.Click += new System.EventHandler(this.btn_BottomRight_Click);
             // 
             // btn_BottomMiddle
             // 
