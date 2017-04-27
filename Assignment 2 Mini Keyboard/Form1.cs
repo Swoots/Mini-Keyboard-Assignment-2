@@ -15,18 +15,24 @@ namespace Assignment_2_Mini_Keyboard
     {
         // Flags changes made and thus file needs saving
         bool booleanRequiresSaving = false;
+
         // The Path to the 'Dictionary'
         string strPresentFilePathName = "";
+
         // Timing Functionality
         bool boolFirstVisit = true;
         int intIntervalRequired = 500;
-        // Global ListBox can be place on the Form instead of here.
+
+        // Global ListBox can be placed on the Form instead of here.
         ListBox lstGlobalListbox = new ListBox();
         int intMyListIndex = 0;
+
         // Buttons. Identifies which button is being selected be the user.
         bool[] boolsButtonPresssed = new bool[19];
+
         // Prediction.
         string Str_KeyStrokes;
+
         // Is the line from the list that has the highest useage
         int intPredictedIndex;
         int intNumberOfCharacters;
@@ -62,7 +68,14 @@ namespace Assignment_2_Mini_Keyboard
 
         private void btn_Mode_Click(object sender, EventArgs e)
         {
-
+            if (rtxt_Multipress.Text == "Prediction")
+            {
+                rtxt_Multipress.Text = "Multi-Press";
+            }
+            else
+            {
+                rtxt_Multipress.Text = "Prediction";
+            }
         }
     }
 }

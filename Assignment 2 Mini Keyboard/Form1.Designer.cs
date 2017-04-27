@@ -259,6 +259,7 @@
             this.btn_1.TabIndex = 11;
             this.btn_1.Text = "1\r\nP Q R S";
             this.btn_1.UseVisualStyleBackColor = false;
+            this.btn_1.Click += new System.EventHandler(this.btn_1_Click);
             // 
             // btn_2
             // 
