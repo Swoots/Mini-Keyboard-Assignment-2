@@ -1,2 +1,1 @@
 c:\users\luke\documents\visual studio 2015\Projects\Assignment 2 Mini Keyboard\Assignment 2 Mini Keyboard\bin\Debug\Assignment 2 Mini Keyboard.exe.config
-F:\MyWork\GitHub\Mini-Keyboard-Assignment-2\Assignment 2 Mini Keyboard\bin\Debug\Assignment 2 Mini Keyboard.exe.config

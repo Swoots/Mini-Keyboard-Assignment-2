@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Panel2 = new System.Windows.Forms.Panel();
             this.rtxt_Multipress = new System.Windows.Forms.RichTextBox();
             this.rtxt_WordBuilder = new System.Windows.Forms.RichTextBox();
@@ -55,6 +56,7 @@
             this.btn_BottomRight = new System.Windows.Forms.Button();
             this.btn_BottomMiddle = new System.Windows.Forms.Button();
             this.Panel1 = new System.Windows.Forms.Panel();
+            this.withinTimer = new System.Windows.Forms.Timer(this.components);
             this.Panel2.SuspendLayout();
             this.MenuStrip1.SuspendLayout();
             this.Panel1.SuspendLayout();
@@ -106,6 +108,7 @@
             this.btn_Mode.TabIndex = 20;
             this.btn_Mode.Text = "Mode";
             this.btn_Mode.UseVisualStyleBackColor = false;
+            this.btn_Mode.Click += new System.EventHandler(this.btn_Mode_Click);
             // 
             // btn_Next
             // 
@@ -333,6 +336,10 @@
             this.Panel1.Size = new System.Drawing.Size(309, 312);
             this.Panel1.TabIndex = 4;
             // 
+            // withinTimer
+            // 
+            this.withinTimer.Interval = 500;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -382,6 +389,7 @@
         internal System.Windows.Forms.Button btn_BottomRight;
         internal System.Windows.Forms.Button btn_BottomMiddle;
         internal System.Windows.Forms.Panel Panel1;
+        private System.Windows.Forms.Timer withinTimer;
     }
 }
 
