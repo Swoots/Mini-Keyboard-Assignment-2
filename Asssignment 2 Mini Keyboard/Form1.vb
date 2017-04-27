@@ -11,11 +11,11 @@
 
     End Sub
 
-    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles btn_BottomLeft.Click
 
     End Sub
 
-    Private Sub RichTextBox2_TextChanged(sender As Object, e As EventArgs) Handles RichTextBox2.TextChanged
+    Private Sub RichTextBox2_TextChanged(sender As Object, e As EventArgs) Handles rtxt_Multipress.TextChanged
 
     End Sub
 End Class

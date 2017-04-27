@@ -23,30 +23,30 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.Button13 = New System.Windows.Forms.Button()
-        Me.Button14 = New System.Windows.Forms.Button()
-        Me.Button15 = New System.Windows.Forms.Button()
-        Me.Button16 = New System.Windows.Forms.Button()
-        Me.Button17 = New System.Windows.Forms.Button()
-        Me.Button18 = New System.Windows.Forms.Button()
-        Me.Button19 = New System.Windows.Forms.Button()
+        Me.btn_BottomMiddle = New System.Windows.Forms.Button()
+        Me.btn_BottomRight = New System.Windows.Forms.Button()
+        Me.btn_BottomLeft = New System.Windows.Forms.Button()
+        Me.btn_1 = New System.Windows.Forms.Button()
+        Me.btn_2 = New System.Windows.Forms.Button()
+        Me.btn_3 = New System.Windows.Forms.Button()
+        Me.btn_4 = New System.Windows.Forms.Button()
+        Me.btn_5 = New System.Windows.Forms.Button()
+        Me.btn_6 = New System.Windows.Forms.Button()
+        Me.btn_7 = New System.Windows.Forms.Button()
+        Me.btn_8 = New System.Windows.Forms.Button()
+        Me.btn_9 = New System.Windows.Forms.Button()
+        Me.btn_Enter = New System.Windows.Forms.Button()
+        Me.btn_null1 = New System.Windows.Forms.Button()
+        Me.btn_null2 = New System.Windows.Forms.Button()
+        Me.btn_SendPredicted = New System.Windows.Forms.Button()
+        Me.btn_Mode = New System.Windows.Forms.Button()
+        Me.btn_Next = New System.Windows.Forms.Button()
+        Me.btn_Previous = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
-        Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.rtxt_WordBuilder = New System.Windows.Forms.RichTextBox()
+        Me.rtxt_Multipress = New System.Windows.Forms.RichTextBox()
+        Me.txt_Notepad = New System.Windows.Forms.TextBox()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConfigureToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1.SuspendLayout()
@@ -56,224 +56,222 @@ Partial Class Form1
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.Button16)
-        Me.Panel1.Controls.Add(Me.Button17)
-        Me.Panel1.Controls.Add(Me.Button18)
-        Me.Panel1.Controls.Add(Me.Button19)
-        Me.Panel1.Controls.Add(Me.Button14)
-        Me.Panel1.Controls.Add(Me.Button15)
-        Me.Panel1.Controls.Add(Me.Button13)
-        Me.Panel1.Controls.Add(Me.Button9)
-        Me.Panel1.Controls.Add(Me.Button4)
-        Me.Panel1.Controls.Add(Me.Button11)
-        Me.Panel1.Controls.Add(Me.Button12)
-        Me.Panel1.Controls.Add(Me.Button7)
-        Me.Panel1.Controls.Add(Me.Button8)
-        Me.Panel1.Controls.Add(Me.Button1)
-        Me.Panel1.Controls.Add(Me.Button2)
-        Me.Panel1.Controls.Add(Me.Button3)
-        Me.Panel1.Controls.Add(Me.Button10)
-        Me.Panel1.Controls.Add(Me.Button5)
-        Me.Panel1.Controls.Add(Me.Button6)
+        Me.Panel1.Controls.Add(Me.btn_SendPredicted)
+        Me.Panel1.Controls.Add(Me.btn_Mode)
+        Me.Panel1.Controls.Add(Me.btn_Next)
+        Me.Panel1.Controls.Add(Me.btn_Previous)
+        Me.Panel1.Controls.Add(Me.btn_null1)
+        Me.Panel1.Controls.Add(Me.btn_null2)
+        Me.Panel1.Controls.Add(Me.btn_Enter)
+        Me.Panel1.Controls.Add(Me.btn_7)
+        Me.Panel1.Controls.Add(Me.btn_4)
+        Me.Panel1.Controls.Add(Me.btn_8)
+        Me.Panel1.Controls.Add(Me.btn_9)
+        Me.Panel1.Controls.Add(Me.btn_5)
+        Me.Panel1.Controls.Add(Me.btn_6)
+        Me.Panel1.Controls.Add(Me.btn_1)
+        Me.Panel1.Controls.Add(Me.btn_2)
+        Me.Panel1.Controls.Add(Me.btn_3)
+        Me.Panel1.Controls.Add(Me.btn_BottomLeft)
+        Me.Panel1.Controls.Add(Me.btn_BottomMiddle)
+        Me.Panel1.Controls.Add(Me.btn_BottomRight)
         Me.Panel1.Location = New System.Drawing.Point(151, 269)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(309, 312)
         Me.Panel1.TabIndex = 0
         '
-        'Button5
+        'btn_BottomMiddle
         '
-        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Button5.Location = New System.Drawing.Point(83, 250)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(67, 55)
-        Me.Button5.TabIndex = 5
-        Me.Button5.Text = "Button5"
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.btn_BottomMiddle.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btn_BottomMiddle.Location = New System.Drawing.Point(83, 250)
+        Me.btn_BottomMiddle.Name = "btn_BottomMiddle"
+        Me.btn_BottomMiddle.Size = New System.Drawing.Size(67, 55)
+        Me.btn_BottomMiddle.TabIndex = 5
+        Me.btn_BottomMiddle.Text = "000 " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "[ _ ]"
+        Me.btn_BottomMiddle.UseVisualStyleBackColor = False
         '
-        'Button6
+        'btn_BottomRight
         '
-        Me.Button6.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Button6.Location = New System.Drawing.Point(156, 250)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(67, 55)
-        Me.Button6.TabIndex = 4
-        Me.Button6.Text = "Button6"
-        Me.Button6.UseVisualStyleBackColor = False
+        Me.btn_BottomRight.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btn_BottomRight.Location = New System.Drawing.Point(156, 250)
+        Me.btn_BottomRight.Name = "btn_BottomRight"
+        Me.btn_BottomRight.Size = New System.Drawing.Size(67, 55)
+        Me.btn_BottomRight.TabIndex = 4
+        Me.btn_BottomRight.Text = "#" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "000"
+        Me.btn_BottomRight.UseVisualStyleBackColor = False
         '
-        'Button10
+        'btn_BottomLeft
         '
-        Me.Button10.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Button10.Location = New System.Drawing.Point(10, 250)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(67, 55)
-        Me.Button10.TabIndex = 8
-        Me.Button10.Text = "Button10"
-        Me.Button10.UseVisualStyleBackColor = False
+        Me.btn_BottomLeft.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btn_BottomLeft.Location = New System.Drawing.Point(10, 250)
+        Me.btn_BottomLeft.Name = "btn_BottomLeft"
+        Me.btn_BottomLeft.Size = New System.Drawing.Size(67, 55)
+        Me.btn_BottomLeft.TabIndex = 8
+        Me.btn_BottomLeft.Text = "* - _"
+        Me.btn_BottomLeft.UseVisualStyleBackColor = False
         '
-        'Button1
+        'btn_1
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(10, 189)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(67, 55)
-        Me.Button1.TabIndex = 11
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btn_1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btn_1.Location = New System.Drawing.Point(10, 189)
+        Me.btn_1.Name = "btn_1"
+        Me.btn_1.Size = New System.Drawing.Size(67, 55)
+        Me.btn_1.TabIndex = 11
+        Me.btn_1.Text = "1" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "P Q R S"
+        Me.btn_1.UseVisualStyleBackColor = False
         '
-        'Button2
+        'btn_2
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Button2.Location = New System.Drawing.Point(83, 189)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(67, 55)
-        Me.Button2.TabIndex = 10
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btn_2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btn_2.Location = New System.Drawing.Point(83, 189)
+        Me.btn_2.Name = "btn_2"
+        Me.btn_2.Size = New System.Drawing.Size(67, 55)
+        Me.btn_2.TabIndex = 10
+        Me.btn_2.Text = "2" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "T U V"
+        Me.btn_2.UseVisualStyleBackColor = False
         '
-        'Button3
+        'btn_3
         '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Button3.Location = New System.Drawing.Point(156, 189)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(67, 55)
-        Me.Button3.TabIndex = 9
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btn_3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btn_3.Location = New System.Drawing.Point(156, 189)
+        Me.btn_3.Name = "btn_3"
+        Me.btn_3.Size = New System.Drawing.Size(67, 55)
+        Me.btn_3.TabIndex = 9
+        Me.btn_3.Text = "3" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "W X Y Z"
+        Me.btn_3.UseVisualStyleBackColor = False
         '
-        'Button4
+        'btn_4
         '
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Button4.Location = New System.Drawing.Point(10, 128)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(67, 55)
-        Me.Button4.TabIndex = 14
-        Me.Button4.Text = "Button4"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.btn_4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btn_4.Location = New System.Drawing.Point(10, 128)
+        Me.btn_4.Name = "btn_4"
+        Me.btn_4.Size = New System.Drawing.Size(67, 55)
+        Me.btn_4.TabIndex = 14
+        Me.btn_4.Text = "4" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "G H I"
+        Me.btn_4.UseVisualStyleBackColor = False
         '
-        'Button7
+        'btn_5
         '
-        Me.Button7.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Button7.Location = New System.Drawing.Point(83, 128)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(67, 55)
-        Me.Button7.TabIndex = 13
-        Me.Button7.Text = "Button7"
-        Me.Button7.UseVisualStyleBackColor = False
+        Me.btn_5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btn_5.Location = New System.Drawing.Point(83, 128)
+        Me.btn_5.Name = "btn_5"
+        Me.btn_5.Size = New System.Drawing.Size(67, 55)
+        Me.btn_5.TabIndex = 13
+        Me.btn_5.Text = "5" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "J K L"
+        Me.btn_5.UseVisualStyleBackColor = False
         '
-        'Button8
+        'btn_6
         '
-        Me.Button8.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Button8.Location = New System.Drawing.Point(156, 128)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(67, 55)
-        Me.Button8.TabIndex = 12
-        Me.Button8.Text = "Button8"
-        Me.Button8.UseVisualStyleBackColor = False
+        Me.btn_6.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btn_6.Location = New System.Drawing.Point(156, 128)
+        Me.btn_6.Name = "btn_6"
+        Me.btn_6.Size = New System.Drawing.Size(67, 55)
+        Me.btn_6.TabIndex = 12
+        Me.btn_6.Text = "6" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "M N O"
+        Me.btn_6.UseVisualStyleBackColor = False
         '
-        'Button9
+        'btn_7
         '
-        Me.Button9.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Button9.Location = New System.Drawing.Point(10, 67)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(67, 55)
-        Me.Button9.TabIndex = 11
-        Me.Button9.Text = "Button9"
-        Me.Button9.UseVisualStyleBackColor = False
+        Me.btn_7.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btn_7.Location = New System.Drawing.Point(10, 67)
+        Me.btn_7.Name = "btn_7"
+        Me.btn_7.Size = New System.Drawing.Size(67, 55)
+        Me.btn_7.TabIndex = 11
+        Me.btn_7.Text = "7" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & ". , """
+        Me.btn_7.UseVisualStyleBackColor = False
         '
-        'Button11
+        'btn_8
         '
-        Me.Button11.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Button11.Location = New System.Drawing.Point(83, 67)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(67, 55)
-        Me.Button11.TabIndex = 10
-        Me.Button11.Text = "Button11"
-        Me.Button11.UseVisualStyleBackColor = False
+        Me.btn_8.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btn_8.Location = New System.Drawing.Point(83, 67)
+        Me.btn_8.Name = "btn_8"
+        Me.btn_8.Size = New System.Drawing.Size(67, 55)
+        Me.btn_8.TabIndex = 10
+        Me.btn_8.Text = "8" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "A B C"
+        Me.btn_8.UseVisualStyleBackColor = False
         '
-        'Button12
+        'btn_9
         '
-        Me.Button12.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Button12.Location = New System.Drawing.Point(156, 67)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(67, 55)
-        Me.Button12.TabIndex = 9
-        Me.Button12.Text = "Button12"
-        Me.Button12.UseVisualStyleBackColor = False
+        Me.btn_9.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btn_9.Location = New System.Drawing.Point(156, 67)
+        Me.btn_9.Name = "btn_9"
+        Me.btn_9.Size = New System.Drawing.Size(67, 55)
+        Me.btn_9.TabIndex = 9
+        Me.btn_9.Text = "9" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "D E F"
+        Me.btn_9.UseVisualStyleBackColor = False
         '
-        'Button13
+        'btn_Enter
         '
-        Me.Button13.BackColor = System.Drawing.Color.Gold
-        Me.Button13.Location = New System.Drawing.Point(229, 189)
-        Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(69, 116)
-        Me.Button13.TabIndex = 15
-        Me.Button13.Text = "Button13"
-        Me.Button13.UseVisualStyleBackColor = False
+        Me.btn_Enter.BackColor = System.Drawing.Color.Gold
+        Me.btn_Enter.Location = New System.Drawing.Point(229, 189)
+        Me.btn_Enter.Name = "btn_Enter"
+        Me.btn_Enter.Size = New System.Drawing.Size(69, 116)
+        Me.btn_Enter.TabIndex = 15
+        Me.btn_Enter.Text = "Enter"
+        Me.btn_Enter.UseVisualStyleBackColor = False
         '
-        'Button14
+        'btn_null1
         '
-        Me.Button14.BackColor = System.Drawing.Color.LightGoldenrodYellow
-        Me.Button14.Location = New System.Drawing.Point(229, 67)
-        Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(67, 55)
-        Me.Button14.TabIndex = 16
-        Me.Button14.Text = "Button14"
-        Me.Button14.UseVisualStyleBackColor = False
+        Me.btn_null1.BackColor = System.Drawing.Color.LightGoldenrodYellow
+        Me.btn_null1.Location = New System.Drawing.Point(229, 67)
+        Me.btn_null1.Name = "btn_null1"
+        Me.btn_null1.Size = New System.Drawing.Size(67, 55)
+        Me.btn_null1.TabIndex = 16
+        Me.btn_null1.UseVisualStyleBackColor = False
         '
-        'Button15
+        'btn_null2
         '
-        Me.Button15.BackColor = System.Drawing.Color.LightGoldenrodYellow
-        Me.Button15.Location = New System.Drawing.Point(229, 128)
-        Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(67, 55)
-        Me.Button15.TabIndex = 17
-        Me.Button15.Text = "Button15"
-        Me.Button15.UseVisualStyleBackColor = False
+        Me.btn_null2.BackColor = System.Drawing.Color.LightGoldenrodYellow
+        Me.btn_null2.Location = New System.Drawing.Point(229, 128)
+        Me.btn_null2.Name = "btn_null2"
+        Me.btn_null2.Size = New System.Drawing.Size(67, 55)
+        Me.btn_null2.TabIndex = 17
+        Me.btn_null2.UseVisualStyleBackColor = False
         '
-        'Button16
+        'btn_SendPredicted
         '
-        Me.Button16.BackColor = System.Drawing.Color.LightGoldenrodYellow
-        Me.Button16.Location = New System.Drawing.Point(229, 6)
-        Me.Button16.Name = "Button16"
-        Me.Button16.Size = New System.Drawing.Size(67, 55)
-        Me.Button16.TabIndex = 21
-        Me.Button16.Text = "Button16"
-        Me.Button16.UseVisualStyleBackColor = False
+        Me.btn_SendPredicted.BackColor = System.Drawing.Color.LightGoldenrodYellow
+        Me.btn_SendPredicted.Location = New System.Drawing.Point(229, 6)
+        Me.btn_SendPredicted.Name = "btn_SendPredicted"
+        Me.btn_SendPredicted.Size = New System.Drawing.Size(67, 55)
+        Me.btn_SendPredicted.TabIndex = 21
+        Me.btn_SendPredicted.Text = "Send Predicted"
+        Me.btn_SendPredicted.UseVisualStyleBackColor = False
         '
-        'Button17
+        'btn_Mode
         '
-        Me.Button17.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Button17.Location = New System.Drawing.Point(10, 6)
-        Me.Button17.Name = "Button17"
-        Me.Button17.Size = New System.Drawing.Size(67, 55)
-        Me.Button17.TabIndex = 20
-        Me.Button17.Text = "Button17"
-        Me.Button17.UseVisualStyleBackColor = False
+        Me.btn_Mode.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btn_Mode.Location = New System.Drawing.Point(10, 6)
+        Me.btn_Mode.Name = "btn_Mode"
+        Me.btn_Mode.Size = New System.Drawing.Size(67, 55)
+        Me.btn_Mode.TabIndex = 20
+        Me.btn_Mode.Text = "Mode"
+        Me.btn_Mode.UseVisualStyleBackColor = False
         '
-        'Button18
+        'btn_Next
         '
-        Me.Button18.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Button18.Location = New System.Drawing.Point(83, 6)
-        Me.Button18.Name = "Button18"
-        Me.Button18.Size = New System.Drawing.Size(67, 55)
-        Me.Button18.TabIndex = 19
-        Me.Button18.Text = "Button18"
-        Me.Button18.UseVisualStyleBackColor = False
+        Me.btn_Next.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btn_Next.Location = New System.Drawing.Point(83, 6)
+        Me.btn_Next.Name = "btn_Next"
+        Me.btn_Next.Size = New System.Drawing.Size(67, 55)
+        Me.btn_Next.TabIndex = 19
+        Me.btn_Next.Text = "Next"
+        Me.btn_Next.UseVisualStyleBackColor = False
         '
-        'Button19
+        'btn_Previous
         '
-        Me.Button19.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Button19.Location = New System.Drawing.Point(156, 6)
-        Me.Button19.Name = "Button19"
-        Me.Button19.Size = New System.Drawing.Size(67, 55)
-        Me.Button19.TabIndex = 18
-        Me.Button19.Text = "Button19"
-        Me.Button19.UseVisualStyleBackColor = False
+        Me.btn_Previous.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btn_Previous.Location = New System.Drawing.Point(156, 6)
+        Me.btn_Previous.Name = "btn_Previous"
+        Me.btn_Previous.Size = New System.Drawing.Size(67, 55)
+        Me.btn_Previous.TabIndex = 18
+        Me.btn_Previous.Text = "Previous"
+        Me.btn_Previous.UseVisualStyleBackColor = False
         '
         'Panel2
         '
-        Me.Panel2.Controls.Add(Me.RichTextBox2)
-        Me.Panel2.Controls.Add(Me.RichTextBox1)
+        Me.Panel2.Controls.Add(Me.rtxt_Multipress)
+        Me.Panel2.Controls.Add(Me.rtxt_WordBuilder)
         Me.Panel2.Location = New System.Drawing.Point(151, 211)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(309, 58)
@@ -288,31 +286,32 @@ Partial Class Form1
         Me.MenuStrip1.TabIndex = 2
         Me.MenuStrip1.Text = "MenuStrip1"
         '
-        'RichTextBox1
+        'rtxt_WordBuilder
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(10, 17)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(203, 23)
-        Me.RichTextBox1.TabIndex = 1
-        Me.RichTextBox1.Text = ""
+        Me.rtxt_WordBuilder.Location = New System.Drawing.Point(10, 17)
+        Me.rtxt_WordBuilder.Name = "rtxt_WordBuilder"
+        Me.rtxt_WordBuilder.Size = New System.Drawing.Size(203, 23)
+        Me.rtxt_WordBuilder.TabIndex = 1
+        Me.rtxt_WordBuilder.Text = ""
         '
-        'RichTextBox2
+        'rtxt_Multipress
         '
-        Me.RichTextBox2.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.RichTextBox2.Location = New System.Drawing.Point(229, 17)
-        Me.RichTextBox2.Name = "RichTextBox2"
-        Me.RichTextBox2.ReadOnly = True
-        Me.RichTextBox2.Size = New System.Drawing.Size(57, 21)
-        Me.RichTextBox2.TabIndex = 3
-        Me.RichTextBox2.Text = "Multi-Press"
+        Me.rtxt_Multipress.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.rtxt_Multipress.Location = New System.Drawing.Point(229, 17)
+        Me.rtxt_Multipress.Name = "rtxt_Multipress"
+        Me.rtxt_Multipress.ReadOnly = True
+        Me.rtxt_Multipress.Size = New System.Drawing.Size(57, 21)
+        Me.rtxt_Multipress.TabIndex = 3
+        Me.rtxt_Multipress.Text = "Multi-Press"
         '
-        'TextBox1
+        'txt_Notepad
         '
-        Me.TextBox1.Location = New System.Drawing.Point(93, 79)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(399, 126)
-        Me.TextBox1.TabIndex = 3
+        Me.txt_Notepad.BackColor = System.Drawing.Color.White
+        Me.txt_Notepad.Location = New System.Drawing.Point(74, 47)
+        Me.txt_Notepad.Multiline = True
+        Me.txt_Notepad.Name = "txt_Notepad"
+        Me.txt_Notepad.Size = New System.Drawing.Size(455, 148)
+        Me.txt_Notepad.TabIndex = 3
         '
         'FileToolStripMenuItem
         '
@@ -331,7 +330,7 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(617, 593)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txt_Notepad)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.MenuStrip1)
@@ -347,30 +346,30 @@ Partial Class Form1
 
     End Sub
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents Button6 As System.Windows.Forms.Button
-    Friend WithEvents Button9 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button11 As System.Windows.Forms.Button
-    Friend WithEvents Button12 As System.Windows.Forms.Button
-    Friend WithEvents Button7 As System.Windows.Forms.Button
-    Friend WithEvents Button8 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button10 As System.Windows.Forms.Button
-    Friend WithEvents Button16 As System.Windows.Forms.Button
-    Friend WithEvents Button17 As System.Windows.Forms.Button
-    Friend WithEvents Button18 As System.Windows.Forms.Button
-    Friend WithEvents Button19 As System.Windows.Forms.Button
-    Friend WithEvents Button14 As System.Windows.Forms.Button
-    Friend WithEvents Button15 As System.Windows.Forms.Button
-    Friend WithEvents Button13 As System.Windows.Forms.Button
+    Friend WithEvents btn_BottomMiddle As System.Windows.Forms.Button
+    Friend WithEvents btn_BottomRight As System.Windows.Forms.Button
+    Friend WithEvents btn_7 As System.Windows.Forms.Button
+    Friend WithEvents btn_4 As System.Windows.Forms.Button
+    Friend WithEvents btn_8 As System.Windows.Forms.Button
+    Friend WithEvents btn_9 As System.Windows.Forms.Button
+    Friend WithEvents btn_5 As System.Windows.Forms.Button
+    Friend WithEvents btn_6 As System.Windows.Forms.Button
+    Friend WithEvents btn_1 As System.Windows.Forms.Button
+    Friend WithEvents btn_2 As System.Windows.Forms.Button
+    Friend WithEvents btn_3 As System.Windows.Forms.Button
+    Friend WithEvents btn_BottomLeft As System.Windows.Forms.Button
+    Friend WithEvents btn_SendPredicted As System.Windows.Forms.Button
+    Friend WithEvents btn_Mode As System.Windows.Forms.Button
+    Friend WithEvents btn_Next As System.Windows.Forms.Button
+    Friend WithEvents btn_Previous As System.Windows.Forms.Button
+    Friend WithEvents btn_null1 As System.Windows.Forms.Button
+    Friend WithEvents btn_null2 As System.Windows.Forms.Button
+    Friend WithEvents btn_Enter As System.Windows.Forms.Button
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
-    Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
-    Friend WithEvents RichTextBox2 As System.Windows.Forms.RichTextBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents rtxt_WordBuilder As System.Windows.Forms.RichTextBox
+    Friend WithEvents rtxt_Multipress As System.Windows.Forms.RichTextBox
+    Friend WithEvents txt_Notepad As System.Windows.Forms.TextBox
     Friend WithEvents FileToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ConfigureToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
