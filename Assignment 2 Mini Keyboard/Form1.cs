@@ -81,46 +81,55 @@ namespace Assignment_2_Mini_Keyboard
         private void btn_1_Click(object sender, EventArgs e)
         {
             rtxt_WordBuilder.Text += "p";
+            Str_KeyStrokes += "1";
         }
 
         private void btn_2_Click(object sender, EventArgs e)
         {
             rtxt_WordBuilder.Text += "t";
+            Str_KeyStrokes += "2";
         }
 
         private void btn_3_Click(object sender, EventArgs e)
         {
             rtxt_WordBuilder.Text += "w";
+            Str_KeyStrokes += "3";
         }
 
         private void btn_4_Click(object sender, EventArgs e)
         {
             rtxt_WordBuilder.Text += "g";
+            Str_KeyStrokes += "4";
         }
 
         private void btn_5_Click(object sender, EventArgs e)
         {
             rtxt_WordBuilder.Text += "j";
+            Str_KeyStrokes += "5";
         }
 
         private void btn_6_Click(object sender, EventArgs e)
         {
             rtxt_WordBuilder.Text += "m";
+            Str_KeyStrokes += "6";
         }
 
         private void btn_7_Click(object sender, EventArgs e)
         {
             rtxt_WordBuilder.Text += ".";
+            Str_KeyStrokes += "7";
         }
 
         private void btn_8_Click(object sender, EventArgs e)
         {
             rtxt_WordBuilder.Text += "a";
+            Str_KeyStrokes += "8";
         }
 
         private void btn_9_Click(object sender, EventArgs e)
         {
             rtxt_WordBuilder.Text += "d";
+            Str_KeyStrokes += "9";
         }
 
         private void btn_BottomLeft_Click(object sender, EventArgs e)
