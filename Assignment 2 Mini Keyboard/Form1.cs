@@ -141,20 +141,121 @@ namespace Assignment_2_Mini_Keyboard
             }
         }
 
+
         private void btn_2_Click(object sender, EventArgs e)
         {
             withinTimer.Interval = intIntervalRequired;
-            withinTimer.Start();
-            rtxt_WordBuilder.Text += "t";
-            Str_KeyStrokes += "2";
+            if (!withinTimer.Enabled)
+            {
+                rtxt_WordBuilder.Text += "t";
+                Str_KeyStrokes += "2";
+                withinTimer.Start();
+            }
+            else
+            {
+                string lastChar = "";
+
+                // Gets the last character
+                if (rtxt_WordBuilder.Text.Length > 0)
+                {
+                    lastChar = rtxt_WordBuilder.Text.Substring(rtxt_WordBuilder.Text.Length - 1, 1);
+                }
+
+
+                // Deletes the last character
+                rtxt_WordBuilder.Text = rtxt_WordBuilder.Text.Substring(0, rtxt_WordBuilder.Text.Length - 1);
+
+                // reset timer
+                withinTimer.Stop();
+                withinTimer.Start();
+                // depending on last char, pick new one
+                switch (lastChar)
+                {
+                    case "t":
+                        rtxt_WordBuilder.Text += "u";
+                        break;
+                    case "u":
+                        rtxt_WordBuilder.Text += "v";
+                        break;
+                    case "v":
+                        rtxt_WordBuilder.Text += "2";
+                        break;
+                    case "2":
+                        rtxt_WordBuilder.Text += "T";
+                        break;
+                    case "T":
+                        rtxt_WordBuilder.Text += "U";
+                        break;
+                    case "U":
+                        rtxt_WordBuilder.Text += "V";
+                        break;
+                    case "V":
+                        rtxt_WordBuilder.Text += "t";
+                        break;
+    
+                }
+            }
         }
 
         private void btn_3_Click(object sender, EventArgs e)
         {
             withinTimer.Interval = intIntervalRequired;
-            withinTimer.Start();
-            rtxt_WordBuilder.Text += "w";
-            Str_KeyStrokes += "3";
+            if (!withinTimer.Enabled)
+            {
+                rtxt_WordBuilder.Text += "w";
+                Str_KeyStrokes += "3";
+                withinTimer.Start();
+            }
+            else
+            {
+                string lastChar = "";
+
+                // Gets the last character
+                if (rtxt_WordBuilder.Text.Length > 0)
+                {
+                    lastChar = rtxt_WordBuilder.Text.Substring(rtxt_WordBuilder.Text.Length - 1, 1);
+                }
+
+
+                // Deletes the last character
+                rtxt_WordBuilder.Text = rtxt_WordBuilder.Text.Substring(0, rtxt_WordBuilder.Text.Length - 1);
+
+                // reset timer
+                withinTimer.Stop();
+                withinTimer.Start();
+                // depending on last char, pick new one
+                switch (lastChar)
+                {
+                    case "w":
+                        rtxt_WordBuilder.Text += "x";
+                        break;
+                    case "x":
+                        rtxt_WordBuilder.Text += "y";
+                        break;
+                    case "y":
+                        rtxt_WordBuilder.Text += "z";
+                        break;
+                    case "z":
+                        rtxt_WordBuilder.Text += "3";
+                        break;
+                    case "3":
+                        rtxt_WordBuilder.Text += "W";
+                        break;
+                    case "W":
+                        rtxt_WordBuilder.Text += "X";
+                        break;
+                    case "X":
+                        rtxt_WordBuilder.Text += "Y";
+                        break;
+                    case "Y":
+                        rtxt_WordBuilder.Text += "Z";
+                        break;
+                    case "Z":
+                        rtxt_WordBuilder.Text += "w";
+                        break;
+
+                }
+            }
         }
 
         private void btn_4_Click(object sender, EventArgs e)
