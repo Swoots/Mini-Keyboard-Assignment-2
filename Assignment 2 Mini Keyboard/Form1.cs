@@ -755,7 +755,7 @@ namespace Assignment_2_Mini_Keyboard
         }
 
         // just removes last char in word builder
-        private void btn_Previous_Click(object sender, EventArgs e)
+        private void btn_Previous_Click_1(object sender, EventArgs e)
         {
             if (rtxt_WordBuilder.Text.Length > 0)
                 rtxt_WordBuilder.Text = rtxt_WordBuilder.Text.Substring(0, rtxt_WordBuilder.Text.Length - 1);
