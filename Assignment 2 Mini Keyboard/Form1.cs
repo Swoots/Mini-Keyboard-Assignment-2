@@ -229,6 +229,8 @@ namespace Assignment_2_Mini_Keyboard
                 rtxt_WordBuilder.Text += "w";
                 Str_KeyStrokes += "3";
                 withinTimer.Start();
+                boolsButtonPresssed[3] = true;
+
             }
             else if (boolsButtonPresssed[3])
             {
