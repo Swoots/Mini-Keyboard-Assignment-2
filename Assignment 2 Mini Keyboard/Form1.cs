@@ -10,7 +10,6 @@ using System.Windows.Forms;
 using System.IO;
 
 namespace Assignment_2_Mini_Keyboard
-
 {
     public partial class Form1 : Form
     {
@@ -193,7 +192,7 @@ namespace Assignment_2_Mini_Keyboard
                     case "V":
                         rtxt_WordBuilder.Text += "t";
                         break;
-    
+
                 }
             }
         }
@@ -429,7 +428,7 @@ namespace Assignment_2_Mini_Keyboard
             withinTimer.Interval = intIntervalRequired;
             if (!withinTimer.Enabled)
             {
-                rtxt_WordBuilder.Text += "";
+                rtxt_WordBuilder.Text += "0";
                 Str_KeyStrokes += "7";
                 withinTimer.Start();
             }
@@ -588,6 +587,7 @@ namespace Assignment_2_Mini_Keyboard
             withinTimer.Interval = intIntervalRequired;
             withinTimer.Start();
             rtxt_WordBuilder.Text += "*";
+
         }
 
         private void btn_BottomRight_Click(object sender, EventArgs e)
@@ -604,7 +604,7 @@ namespace Assignment_2_Mini_Keyboard
 
         private void btn_BottomMiddle_Click(object sender, EventArgs e)
         {
-            txt_Notepad.Text = txt_Notepad.Text + rtxt_WordBuilder.Text + " ";
+            txt_Notepad.Text = txt_Notepad.Text + rtxt_WordBuilder.Text + "  ";
             rtxt_WordBuilder.Text = "";
             Str_KeyStrokes = "";
         }
@@ -620,6 +620,6 @@ namespace Assignment_2_Mini_Keyboard
             if (rtxt_WordBuilder.Text.Length > 0)
                 rtxt_WordBuilder.Text = rtxt_WordBuilder.Text.Substring(0, rtxt_WordBuilder.Text.Length - 1);
         }
-       
+
     }
 }
