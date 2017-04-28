@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.IO;
 
 namespace Assignment_2_Mini_Keyboard
+
 {
     public partial class Form1 : Form
     {
@@ -613,6 +614,12 @@ namespace Assignment_2_Mini_Keyboard
             txt_Notepad.Text += "\r\n";
         }
 
+        // just removes last char in word builder
+        private void btn_Previous_Click(object sender, EventArgs e)
+        {
+            if (rtxt_WordBuilder.Text.Length > 0)
+                rtxt_WordBuilder.Text = rtxt_WordBuilder.Text.Substring(0, rtxt_WordBuilder.Text.Length - 1);
+        }
        
     }
 }
