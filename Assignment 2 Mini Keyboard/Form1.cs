@@ -473,14 +473,22 @@ namespace Assignment_2_Mini_Keyboard
 
         private void btn_7_Click(object sender, EventArgs e)
         {
+
+            for (int intWhichButton = 0; intWhichButton <= 18; intWhichButton++)
+            {
+                if (intWhichButton != 7)
+                    boolsButtonPresssed[intWhichButton] = false;
+            }
+
             withinTimer.Interval = intIntervalRequired;
-            if (!withinTimer.Enabled)
+            if (!withinTimer.Enabled || boolsButtonPresssed[7] == false)
             {
                 rtxt_WordBuilder.Text += ".";
                 Str_KeyStrokes += "7";
                 withinTimer.Start();
+                boolsButtonPresssed[7] = true;
             }
-            else
+            else if (boolsButtonPresssed[7])
             {
                 string lastChar = "";
 
