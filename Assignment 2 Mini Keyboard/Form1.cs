@@ -621,5 +621,10 @@ namespace Assignment_2_Mini_Keyboard
                 rtxt_WordBuilder.Text = rtxt_WordBuilder.Text.Substring(0, rtxt_WordBuilder.Text.Length - 1);
         }
 
+        private void saToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
