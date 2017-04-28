@@ -452,20 +452,20 @@ namespace Assignment_2_Mini_Keyboard
                 // depending on last char, pick new one
                 switch (lastChar)
                 {
-                    case ",":
-                        rtxt_WordBuilder.Text += ".";
-                        break;
                     case ".":
                         rtxt_WordBuilder.Text += "~";
                         break;
                     case "~":
-                        rtxt_WordBuilder.Text += ":";
+                        rtxt_WordBuilder.Text += "7";
                         break;
-                    case ":":
+                    case "7":
+                        rtxt_WordBuilder.Text += "'";
+                        break;
+                    case "'":
                         rtxt_WordBuilder.Text += ";";
                         break;
                     case ";":
-                        rtxt_WordBuilder.Text += "7";
+                        rtxt_WordBuilder.Text += ";";
                         break;
 
                 }
@@ -538,7 +538,7 @@ namespace Assignment_2_Mini_Keyboard
             }
             else
             {
-                string lastChar = "9";
+                string lastChar = "";
 
                 // Gets the last character
                 if (rtxt_WordBuilder.Text.Length > 0)
@@ -575,7 +575,7 @@ namespace Assignment_2_Mini_Keyboard
                         rtxt_WordBuilder.Text += "F";
                         break;
                     case "F":
-                        rtxt_WordBuilder.Text += "9";
+                        rtxt_WordBuilder.Text += "d";
                         break;
 
                 }
