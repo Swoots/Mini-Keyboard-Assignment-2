@@ -593,14 +593,22 @@ namespace Assignment_2_Mini_Keyboard
 
         private void btn_9_Click(object sender, EventArgs e)
         {
+
+            for (int intWhichButton = 0; intWhichButton <= 18; intWhichButton++)
+            {
+                if (intWhichButton != 9)
+                    boolsButtonPresssed[intWhichButton] = false;
+            }
+
             withinTimer.Interval = intIntervalRequired;
-            if (!withinTimer.Enabled)
+            if (!withinTimer.Enabled || boolsButtonPresssed[9] == false)
             {
                 rtxt_WordBuilder.Text += "d";
                 Str_KeyStrokes += "9";
                 withinTimer.Start();
+                boolsButtonPresssed[9] = true;
             }
-            else
+            else if (boolsButtonPresssed[9])
             {
                 string lastChar = "";
 
