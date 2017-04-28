@@ -429,7 +429,7 @@ namespace Assignment_2_Mini_Keyboard
             withinTimer.Interval = intIntervalRequired;
             if (!withinTimer.Enabled)
             {
-                rtxt_WordBuilder.Text += "7";
+                rtxt_WordBuilder.Text += "";
                 Str_KeyStrokes += "7";
                 withinTimer.Start();
             }
