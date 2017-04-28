@@ -477,14 +477,22 @@ namespace Assignment_2_Mini_Keyboard
 
         private void btn_8_Click(object sender, EventArgs e)
         {
-            withinTimer.Interval = intIntervalRequired;
-            if (!withinTimer.Enabled)
+            for (int intWhichButton = 0; intWhichButton <= 18; intWhichButton++)
             {
+                if (intWhichButton != 8)
+                    boolsButtonPresssed[intWhichButton] = false;
+            }
+ 
+            withinTimer.Interval = intIntervalRequired;
+            if (!withinTimer.Enabled || boolsButtonPresssed[8] == false)
+            {
+
                 rtxt_WordBuilder.Text += "a";
                 Str_KeyStrokes += "8";
                 withinTimer.Start();
+                boolsButtonPresssed[8] = true;
             }
-            else
+            else if(boolsButtonPresssed[8])
             {
                 string lastChar = "";
 
