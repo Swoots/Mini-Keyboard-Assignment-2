@@ -17,7 +17,7 @@ namespace Assignment_2_Mini_Keyboard
         bool booleanRequiresSaving = false;
 
         // The Path to the 'Dictionary'
-        string strPresentFilePathName = "";
+        string strPresentFilePathName = ""; // string was never utilized, dictionary was added as a method below.
 
         // Timing Functionality
         bool boolFirstVisit = true;
@@ -53,14 +53,14 @@ namespace Assignment_2_Mini_Keyboard
                 boolsButtonPresssed[intWhichButton] = false;
             }
 
-            // Load the Dictionary
+            // Load the Dictionary -- beginning to load
             loadDictionary();
         }
 
 
 
 
-        private void loadDictionary()
+        private void loadDictionary() // private void loading continuing to load dictionary
         {
 
         }
@@ -428,7 +428,7 @@ namespace Assignment_2_Mini_Keyboard
             withinTimer.Interval = intIntervalRequired;
             if (!withinTimer.Enabled)
             {
-                rtxt_WordBuilder.Text += "0";
+                rtxt_WordBuilder.Text += ".";
                 Str_KeyStrokes += "7";
                 withinTimer.Start();
             }
@@ -452,7 +452,7 @@ namespace Assignment_2_Mini_Keyboard
                 // depending on last char, pick new one
                 switch (lastChar)
                 {
-                    case "7":
+                    case ",":
                         rtxt_WordBuilder.Text += ".";
                         break;
                     case ".":
