@@ -284,14 +284,21 @@ namespace Assignment_2_Mini_Keyboard
 
         private void btn_4_Click(object sender, EventArgs e)
         {
+            
+            for (int intWhichButton = 0; intWhichButton <= 18; intWhichButton++)
+            {
+                if (intWhichButton != 4)
+                    boolsButtonPresssed[intWhichButton] = false;
+            }
             withinTimer.Interval = intIntervalRequired;
-            if (!withinTimer.Enabled)
+            if (!withinTimer.Enabled || boolsButtonPresssed[4] == false)
             {
                 rtxt_WordBuilder.Text += "g";
                 Str_KeyStrokes += "4";
                 withinTimer.Start();
+                boolsButtonPresssed[4] = true;
             }
-            else
+            else if (boolsButtonPresssed[4])
             {
                 string lastChar = "";
 
