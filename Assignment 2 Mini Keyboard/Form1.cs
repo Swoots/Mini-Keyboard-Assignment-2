@@ -530,9 +530,56 @@ namespace Assignment_2_Mini_Keyboard
         private void btn_9_Click(object sender, EventArgs e)
         {
             withinTimer.Interval = intIntervalRequired;
-            withinTimer.Start();
-            rtxt_WordBuilder.Text += "d";
-            Str_KeyStrokes += "9";
+            if (!withinTimer.Enabled)
+            {
+                rtxt_WordBuilder.Text += "d";
+                Str_KeyStrokes += "9";
+                withinTimer.Start();
+            }
+            else
+            {
+                string lastChar = "";
+
+                // Gets the last character
+                if (rtxt_WordBuilder.Text.Length > 0)
+                {
+                    lastChar = rtxt_WordBuilder.Text.Substring(rtxt_WordBuilder.Text.Length - 1, 1);
+                }
+
+
+                // Deletes the last character
+                rtxt_WordBuilder.Text = rtxt_WordBuilder.Text.Substring(0, rtxt_WordBuilder.Text.Length - 1);
+
+                // reset timer
+                withinTimer.Stop();
+                withinTimer.Start();
+                // depending on last char, pick new one
+                switch (lastChar)
+                {
+                    case "d":
+                        rtxt_WordBuilder.Text += "e";
+                        break;
+                    case "e":
+                        rtxt_WordBuilder.Text += "f";
+                        break;
+                    case "f":
+                        rtxt_WordBuilder.Text += "9";
+                        break;
+                    case "9":
+                        rtxt_WordBuilder.Text += "D";
+                        break;
+                    case "D":
+                        rtxt_WordBuilder.Text += "E";
+                        break;
+                    case "E":
+                        rtxt_WordBuilder.Text += "F";
+                        break;
+                    case "F":
+                        rtxt_WordBuilder.Text += "9";
+                        break;
+
+                }
+            }
         }
 
         private void btn_BottomLeft_Click(object sender, EventArgs e)
