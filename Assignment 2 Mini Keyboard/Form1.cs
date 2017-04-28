@@ -346,14 +346,21 @@ namespace Assignment_2_Mini_Keyboard
 
         private void btn_5_Click(object sender, EventArgs e)
         {
+            for (int intWhichButton = 0; intWhichButton <= 18; intWhichButton++)
+            {
+                if (intWhichButton != 5)
+                    boolsButtonPresssed[intWhichButton] = false;
+            }
+            
             withinTimer.Interval = intIntervalRequired;
-            if (!withinTimer.Enabled)
+            if (!withinTimer.Enabled || boolsButtonPresssed[5] == false)
             {
                 rtxt_WordBuilder.Text += "j";
                 Str_KeyStrokes += "5";
                 withinTimer.Start();
+                boolsButtonPresssed[5] = true;
             }
-            else
+            else if (boolsButtonPresssed[5])
             {
                 string lastChar = "";
 
