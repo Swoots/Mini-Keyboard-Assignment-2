@@ -151,14 +151,23 @@ namespace Assignment_2_Mini_Keyboard
 
         private void btn_2_Click(object sender, EventArgs e)
         {
+
+
+            for (int intWhichButton = 0; intWhichButton <= 18; intWhichButton++)
+            {
+                if (intWhichButton != 2)
+                    boolsButtonPresssed[intWhichButton] = false;
+            }
+
             withinTimer.Interval = intIntervalRequired;
-            if (!withinTimer.Enabled)
+            if (!withinTimer.Enabled || boolsButtonPresssed[2] == false)
             {
                 rtxt_WordBuilder.Text += "t";
                 Str_KeyStrokes += "2";
                 withinTimer.Start();
+                boolsButtonPresssed[2] = true;
             }
-            else
+            else if (boolsButtonPresssed[2])
             {
                 string lastChar = "";
 
