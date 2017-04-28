@@ -266,7 +266,7 @@
             // txt_Notepad
             // 
             this.txt_Notepad.BackColor = System.Drawing.Color.White;
-            this.txt_Notepad.Location = new System.Drawing.Point(18, 27);
+            this.txt_Notepad.Location = new System.Drawing.Point(12, 27);
             this.txt_Notepad.Multiline = true;
             this.txt_Notepad.Name = "txt_Notepad";
             this.txt_Notepad.Size = new System.Drawing.Size(455, 148);
@@ -612,7 +612,8 @@
             this.Controls.Add(this.txt_Notepad);
             this.Controls.Add(this.Panel1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Mini Keyboard Application";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.Panel2.ResumeLayout(false);
             this.MenuStrip1.ResumeLayout(false);
             this.MenuStrip1.PerformLayout();

@@ -626,5 +626,10 @@ namespace Assignment_2_Mini_Keyboard
 
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
