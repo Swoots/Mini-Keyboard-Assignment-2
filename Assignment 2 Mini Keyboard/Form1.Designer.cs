@@ -157,6 +157,7 @@
             this.btn_Enter.TabIndex = 15;
             this.btn_Enter.Text = "Enter";
             this.btn_Enter.UseVisualStyleBackColor = false;
+            this.btn_Enter.Click += new System.EventHandler(this.btn_Enter_Click);
             // 
             // MenuStrip1
             // 
@@ -320,6 +321,7 @@
             this.btn_BottomMiddle.TabIndex = 5;
             this.btn_BottomMiddle.Text = "000 \r\n[ _ ]";
             this.btn_BottomMiddle.UseVisualStyleBackColor = false;
+            this.btn_BottomMiddle.Click += new System.EventHandler(this.btn_BottomMiddle_Click);
             // 
             // Panel1
             // 

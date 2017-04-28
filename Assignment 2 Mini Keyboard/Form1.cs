@@ -600,5 +600,19 @@ namespace Assignment_2_Mini_Keyboard
         {
             withinTimer.Stop();
         }
+
+        private void btn_BottomMiddle_Click(object sender, EventArgs e)
+        {
+            txt_Notepad.Text = txt_Notepad.Text + rtxt_WordBuilder.Text + " ";
+            rtxt_WordBuilder.Text = "";
+            Str_KeyStrokes = "";
+        }
+
+        private void btn_Enter_Click(object sender, EventArgs e)
+        {
+            txt_Notepad.Text += "\r\n";
+        }
+
+       
     }
 }
