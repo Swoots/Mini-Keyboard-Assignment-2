@@ -408,13 +408,20 @@ namespace Assignment_2_Mini_Keyboard
 
         private void btn_6_Click(object sender, EventArgs e)
         {
-            withinTimer.Interval = intIntervalRequired;
-            if (!withinTimer.Enabled)
+
+            for (int intWhichButton = 0; intWhichButton <= 18; intWhichButton++)
             {
+                if (intWhichButton != 6)
+                    boolsButtonPresssed[intWhichButton] = false;
+            }
+
+            withinTimer.Interval = intIntervalRequired;
+            if (!withinTimer.Enabled || boolsButtonPresssed[6] == false)
+            {
+
                 rtxt_WordBuilder.Text += "m";
                 Str_KeyStrokes += "6";
                 withinTimer.Start();
-
                 boolsButtonPresssed[6] = true;
 
             }
