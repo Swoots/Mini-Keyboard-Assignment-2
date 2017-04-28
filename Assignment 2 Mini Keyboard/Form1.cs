@@ -465,7 +465,7 @@ namespace Assignment_2_Mini_Keyboard
                         rtxt_WordBuilder.Text += ";";
                         break;
                     case ";":
-                        rtxt_WordBuilder.Text += ";";
+                        rtxt_WordBuilder.Text += ".";
                         break;
 
                 }
