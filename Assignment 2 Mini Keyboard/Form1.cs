@@ -475,9 +475,56 @@ namespace Assignment_2_Mini_Keyboard
         private void btn_8_Click(object sender, EventArgs e)
         {
             withinTimer.Interval = intIntervalRequired;
-            withinTimer.Start();
-            rtxt_WordBuilder.Text += "a";
-            Str_KeyStrokes += "8";
+            if (!withinTimer.Enabled)
+            {
+                rtxt_WordBuilder.Text += "a";
+                Str_KeyStrokes += "8";
+                withinTimer.Start();
+            }
+            else
+            {
+                string lastChar = "";
+
+                // Gets the last character
+                if (rtxt_WordBuilder.Text.Length > 0)
+                {
+                    lastChar = rtxt_WordBuilder.Text.Substring(rtxt_WordBuilder.Text.Length - 1, 1);
+                }
+
+
+                // Deletes the last character
+                rtxt_WordBuilder.Text = rtxt_WordBuilder.Text.Substring(0, rtxt_WordBuilder.Text.Length - 1);
+
+                // reset timer
+                withinTimer.Stop();
+                withinTimer.Start();
+                // depending on last char, pick new one
+                switch (lastChar)
+                {
+                    case "a":
+                        rtxt_WordBuilder.Text += "b";
+                        break;
+                    case "b":
+                        rtxt_WordBuilder.Text += "c";
+                        break;
+                    case "c":
+                        rtxt_WordBuilder.Text += "8";
+                        break;
+                    case "8":
+                        rtxt_WordBuilder.Text += "A";
+                        break;
+                    case "A":
+                        rtxt_WordBuilder.Text += "B";
+                        break;
+                    case "B":
+                        rtxt_WordBuilder.Text += "C";
+                        break;
+                    case "C":
+                        rtxt_WordBuilder.Text += "a";
+                        break;
+
+                }
+            }
         }
 
         private void btn_9_Click(object sender, EventArgs e)
