@@ -83,60 +83,67 @@ namespace Assignment_2_Mini_Keyboard
 
         private void btn_1_Click(object sender, EventArgs e)
         {
-            withinTimer.Interval = intIntervalRequired;
-            if (!withinTimer.Enabled)
+            for (int intWhichButton = 0; intWhichButton <= 18; intWhichButton++)
             {
-                rtxt_WordBuilder.Text += "p";
-                Str_KeyStrokes += "1";
-                withinTimer.Start();
-            }
-            else
-            {
-                string lastChar = "";
+                if (intWhichButton != 1)
+                    boolsButtonPresssed[intWhichButton] = false;
 
-                // Gets the last character
-                if (rtxt_WordBuilder.Text.Length > 0)
+
+                withinTimer.Interval = intIntervalRequired;
+                if (!withinTimer.Enabled || boolsButtonPresssed[1] == false)
                 {
-                    lastChar = rtxt_WordBuilder.Text.Substring(rtxt_WordBuilder.Text.Length - 1, 1);
+                    rtxt_WordBuilder.Text += "p";
+                    Str_KeyStrokes += "1";
+                    withinTimer.Start();
+                    boolsButtonPresssed[1] = true;
                 }
-
-
-                // Deletes the last character
-                rtxt_WordBuilder.Text = rtxt_WordBuilder.Text.Substring(0, rtxt_WordBuilder.Text.Length - 1);
-
-                // reset timer
-                withinTimer.Stop();
-                withinTimer.Start();
-                // depending on last char, pick new one
-                switch (lastChar)
+                else if (boolsButtonPresssed[1])
                 {
-                    case "p":
-                        rtxt_WordBuilder.Text += "q";
-                        break;
-                    case "q":
-                        rtxt_WordBuilder.Text += "r";
-                        break;
-                    case "r":
-                        rtxt_WordBuilder.Text += "s";
-                        break;
-                    case "s":
-                        rtxt_WordBuilder.Text += "1";
-                        break;
-                    case "1":
-                        rtxt_WordBuilder.Text += "P";
-                        break;
-                    case "P":
-                        rtxt_WordBuilder.Text += "Q";
-                        break;
-                    case "Q":
-                        rtxt_WordBuilder.Text += "R";
-                        break;
-                    case "R":
-                        rtxt_WordBuilder.Text += "S";
-                        break;
-                    case "S":
-                        rtxt_WordBuilder.Text += "p";
-                        break;
+                    string lastChar = "";
+
+                    // Gets the last character
+                    if (rtxt_WordBuilder.Text.Length > 0)
+                    {
+                        lastChar = rtxt_WordBuilder.Text.Substring(rtxt_WordBuilder.Text.Length - 1, 1);
+                    }
+
+                    // Deletes the last character
+                    rtxt_WordBuilder.Text = rtxt_WordBuilder.Text.Substring(0, rtxt_WordBuilder.Text.Length - 1);
+
+                    // reset timer
+                    withinTimer.Stop();
+                    withinTimer.Start();
+                    // depending on last char, pick new one
+                    switch (lastChar)
+                    {
+                        case "p":
+                            rtxt_WordBuilder.Text += "q";
+                            break;
+                        case "q":
+                            rtxt_WordBuilder.Text += "r";
+                            break;
+                        case "r":
+                            rtxt_WordBuilder.Text += "s";
+                            break;
+                        case "s":
+                            rtxt_WordBuilder.Text += "1";
+                            break;
+                        case "1":
+                            rtxt_WordBuilder.Text += "P";
+                            break;
+                        case "P":
+                            rtxt_WordBuilder.Text += "Q";
+                            break;
+                        case "Q":
+                            rtxt_WordBuilder.Text += "R";
+                            break;
+                        case "R":
+                            rtxt_WordBuilder.Text += "S";
+                            break;
+                        case "S":
+                            rtxt_WordBuilder.Text += "p";
+                            break;
+                    }
                 }
             }
         }
