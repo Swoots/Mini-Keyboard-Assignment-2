@@ -7,3 +7,12 @@ F:\MyWork\GitHub\Mini-Keyboard-Assignment-2\Assignment 2 Mini Keyboard\obj\Debug
 F:\MyWork\GitHub\Mini-Keyboard-Assignment-2\Assignment 2 Mini Keyboard\obj\Debug\Assignment_2_Mini_Keyboard.Form1.resources
 F:\MyWork\GitHub\Mini-Keyboard-Assignment-2\Assignment 2 Mini Keyboard\obj\Debug\Assignment_2_Mini_Keyboard.Properties.Resources.resources
 F:\MyWork\GitHub\Mini-Keyboard-Assignment-2\Assignment 2 Mini Keyboard\obj\Debug\Assignment 2 Mini Keyboard.csproj.GenerateResource.Cache
+C:\Users\GIURLANI\Desktop\Assignment 2 Mini Keyboard\Mini-Keyboard-Assignment-2\Assignment 2 Mini Keyboard\bin\Debug\Assignment 2 Mini Keyboard.exe.config
+C:\Users\GIURLANI\Desktop\Assignment 2 Mini Keyboard\Mini-Keyboard-Assignment-2\Assignment 2 Mini Keyboard\obj\Debug\Assignment 2 Mini Keyboard.exe
+C:\Users\GIURLANI\Desktop\Assignment 2 Mini Keyboard\Mini-Keyboard-Assignment-2\Assignment 2 Mini Keyboard\obj\Debug\Assignment 2 Mini Keyboard.pdb
+C:\Users\GIURLANI\Desktop\Assignment 2 Mini Keyboard\Mini-Keyboard-Assignment-2\Assignment 2 Mini Keyboard\obj\Debug\Assignment 2 Mini Keyboard.csprojResolveAssemblyReference.cache
+C:\Users\GIURLANI\Desktop\Assignment 2 Mini Keyboard\Mini-Keyboard-Assignment-2\Assignment 2 Mini Keyboard\obj\Debug\Assignment_2_Mini_Keyboard.Form1.resources
+C:\Users\GIURLANI\Desktop\Assignment 2 Mini Keyboard\Mini-Keyboard-Assignment-2\Assignment 2 Mini Keyboard\obj\Debug\Assignment_2_Mini_Keyboard.Properties.Resources.resources
+C:\Users\GIURLANI\Desktop\Assignment 2 Mini Keyboard\Mini-Keyboard-Assignment-2\Assignment 2 Mini Keyboard\obj\Debug\Assignment 2 Mini Keyboard.csproj.GenerateResource.Cache
+C:\Users\GIURLANI\Desktop\Assignment 2 Mini Keyboard\Mini-Keyboard-Assignment-2\Assignment 2 Mini Keyboard\bin\Debug\Assignment 2 Mini Keyboard.exe
+C:\Users\GIURLANI\Desktop\Assignment 2 Mini Keyboard\Mini-Keyboard-Assignment-2\Assignment 2 Mini Keyboard\bin\Debug\Assignment 2 Mini Keyboard.pdb

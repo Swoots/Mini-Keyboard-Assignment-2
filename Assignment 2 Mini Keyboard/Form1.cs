@@ -426,9 +426,50 @@ namespace Assignment_2_Mini_Keyboard
         private void btn_7_Click(object sender, EventArgs e)
         {
             withinTimer.Interval = intIntervalRequired;
-            withinTimer.Start();
-            rtxt_WordBuilder.Text += ".";
-            Str_KeyStrokes += "7";
+            if (!withinTimer.Enabled)
+            {
+                rtxt_WordBuilder.Text += "7";
+                Str_KeyStrokes += "7";
+                withinTimer.Start();
+            }
+            else
+            {
+                string lastChar = "";
+
+                // Gets the last character
+                if (rtxt_WordBuilder.Text.Length > 0)
+                {
+                    lastChar = rtxt_WordBuilder.Text.Substring(rtxt_WordBuilder.Text.Length - 1, 1);
+                }
+
+
+                // Deletes the last character
+                rtxt_WordBuilder.Text = rtxt_WordBuilder.Text.Substring(0, rtxt_WordBuilder.Text.Length - 1);
+
+                // reset timer
+                withinTimer.Stop();
+                withinTimer.Start();
+                // depending on last char, pick new one
+                switch (lastChar)
+                {
+                    case "7":
+                        rtxt_WordBuilder.Text += ".";
+                        break;
+                    case ".":
+                        rtxt_WordBuilder.Text += "~";
+                        break;
+                    case "~":
+                        rtxt_WordBuilder.Text += ":";
+                        break;
+                    case ":":
+                        rtxt_WordBuilder.Text += ";";
+                        break;
+                    case ";":
+                        rtxt_WordBuilder.Text += "7";
+                        break;
+
+                }
+            }
         }
 
         private void btn_8_Click(object sender, EventArgs e)
